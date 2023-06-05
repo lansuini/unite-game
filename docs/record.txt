@@ -1,0 +1,35 @@
+php /data/hofa/pd/artisan queue:work redis --sleep=1 --tries=0 --queue=bt_4_0
+php artisan queue:clear redis --queue=bt_4_0
+php artisan queue:clear redis --queue=bt_4_1
+
+php artisan queue:clear redis --queue=export
+php artisan queue:clear redis --queue=failtask_4_0
+php artisan queue:clear redis --queue=failtask_4_1
+sudo chmod -R 777 storage
+
+php artisan queue:clear redis --queue=fail_task_0
+
+
+
+php artisan queue:clear redis --queue=notify_0
+php artisan queue:clear redis --queue=notify_1
+php artisan queue:clear redis --queue=notify_2
+php artisan queue:clear redis --queue=notify_3
+php artisan queue:clear redis --queue=notify_4
+php artisan queue:clear redis --queue=notify_5
+php artisan queue:clear redis --queue=notify_6
+php artisan queue:clear redis --queue=notify_7
+php artisan queue:clear redis --queue=notify_8
+php artisan queue:clear redis --queue=notify_9
+php artisan queue:clear redis --queue=notify_10
+php artisan queue:clear redis --queue=notify_11
+php artisan queue:clear redis --queue=notify_12
+php artisan queue:clear redis --queue=notify_13
+php artisan queue:clear redis --queue=notify_14
+php artisan queue:clear redis --queue=notify_15
+php artisan queue:clear redis --queue=notify_16
+php artisan queue:clear redis --queue=notify_17
+php artisan queue:clear redis --queue=notify_18
+php artisan queue:clear redis --queue=notify_19
+php artisan queue:clear redis --queue=fail_notify_0
+php artisan queue:clear redis --queue=fail_notify_1

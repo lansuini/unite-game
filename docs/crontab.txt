@@ -1,0 +1,10 @@
+
+* * * * * cd /data/www/tongits-php && php artisan ServiceChecker minute
+00 * * * * cd /data/hofa/pd && php artisan DataReportExecute cron
+00 03 * * * cd /data/hofa/pd && php artisan ClearDataExecute all
+57 * * * * cd /data/hofa/pd && php artisan WebLogAnalysis cron 1
+
+* * * * * cd /data/www/tongits-php && php artisan ServiceChecker minute
+00 * * * * cd /data/www/tongits-php && php artisan DataReportExecute cron
+00 03 * * * cd /data/www/tongits-php && php artisan ClearDataExecute all
+57 * * * * cd /data/www/tongits-php && php artisan WebLogAnalysis cron 1

@@ -1,0 +1,28 @@
+<?php
+return  [
+    1000 => 'El comerciante no existe',
+    1001 => 'El formato de datos no es válido',
+    1002 => 'La billetera del jugador no existe',
+    1003 => 'Transferencia fallida, el jugador está jugando',
+    1004 => 'La transferencia se está procesando, verifique el estado nuevamente',
+    1005 => 'Saldo insuficiente',
+    1006 => 'Clave de seguridad incorrecta',
+    1007 => 'Solicite límite, intente nuevamente en 15 segundos.',
+    1008 => 'Límite de solicitud, inténtalo de nuevo en 1 minuto.',
+    1009 => 'Restricciones de IP',
+    1010 => 'El comerciante ha sido bloqueado',
+    1011 => 'excepción del modo api',
+    1012 => 'el juego aún no está abierto',
+    1013 => 'Solicite límite, intente nuevamente después de 30 segundos.',
+    1014 => 'Bloqueo de subcanal', 
+    1015 => 'El subcanal no está definido', 
+    701 => 'excepción de jugador',
+    702 => 'excepción de sesión de jugador',
+    703 => 'excepción de token de operador de jugador',
+    704 => 'excepción de nombre de jugador',
+    900 => 'Error de interfaz de comerciante',
+    901 => 'Excepción n.º 1 de la interfaz de red comercial',
+    902 => 'Excepción n.º 2 de la interfaz de red comercial',
+
+    800 => 'excepción de consulta',
+];

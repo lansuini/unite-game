@@ -1,0 +1,23 @@
+
+
+[program:default]
+process_name=%(program_name)s_%(process_num)02d
+command=php /data/www/tongits-php/artisan queue:work redis --sleep=1 --tries=1 --queue=default
+autostart=true
+autorestart=true
+user=www
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/data/www/tongits-php/storage/supervisord-default-worker.log
+stopwaitsecs=3600
+
+[program:export]
+process_name=%(program_name)s_%(process_num)02d
+command=php /data/www/tongits-php/artisan queue:work redis --sleep=1 --tries=1 --queue=export
+autostart=true
+autorestart=true
+user=www
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/data/www/tongits-php/storage/supervisord-export-worker.log
+stopwaitsecs=3600
